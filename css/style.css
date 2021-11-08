@@ -414,3 +414,29 @@ h3{
     font-size: 18px;
     margin:50px;
 }
+
+/* Free trial section */
+#free-trial{
+    background-color: rgb(180,208,231);
+}
+
+#free-trial .container{
+    margin: 0 15%;
+    padding: 100px 0;
+}
+
+#free-trial .container::after{
+    content:"";
+    clear:both;
+    display: table;
+}
+
+#free-trial h2{
+    color:rgb(97,8,43);
+    width:50%;
+}
+
+#free-trial #white-button{
+    border: none;
+    margin-top:60px;
+}
