@@ -1,0 +1,295 @@
+/* General layout */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Whitney', sans-serif;
+}
+
+.lw{
+    float:left;
+}
+
+.rw{
+    float:right;
+}
+
+.hovers:hover{
+    box-shadow: -5px 5px 5px rgb(75,75,75);
+}
+
+.container{
+    margin:100px 15% 100px;
+}
+
+/* Header */
+header{
+    background-color: white;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:70px;
+    padding-top:15px;
+    padding-bottom:40px;
+    z-index:99;
+}
+
+header::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+header .lw{
+    padding-left:30px;
+}
+
+header .rw{
+    padding-right:30px;
+}
+
+header a img{
+    padding-top: 7px;
+}
+
+header .button{
+    margin:0 30px;
+}
+
+/* Navigation bars layout */
+nav ul li{
+    display: inline;
+    padding:0 30px; 
+}
+
+nav ul li:last-child{
+    padding-right:0px;
+}
+
+nav ul li a{
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Button layout */
+.button{
+    padding:10px 30px;
+    text-decoration:none;
+}
+
+#blue-button{
+    background-color:rgb(0, 97, 255);
+    color:white;
+}
+
+#white-button{
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+}
+
+/* Jumbo layout */
+#jumbo{
+    margin-top:70px;
+    background-color:rgb(180,208,231)
+}
+
+#jumbo .container{
+    margin: 0 150px;
+    min-width:1700px;
+    position:relative;
+    top:100px;
+}
+
+#jumbo .container::after{
+    content:"";
+    clear:both;
+    display: table;
+}
+
+h1{
+    font-size: 90px;
+    padding-bottom:50px;
+}
+
+#jumbo .text-container{
+    font-size: 20px;
+    max-width:30%;
+    padding-right:5%;
+}
+
+#jumbo .text-container p{
+    padding-bottom: 30px;
+}
+
+#little-text{
+    font-size:16px;
+    margin-top:20px;
+}
+
+#jumbo img{
+    max-width:60%;
+}
+
+.text-container a{
+    text-decoration: none;
+    color:black;
+}
+
+
+/* Subscriptions section layout */
+h2{
+    font-size:50px;
+    font-weight: bold;
+    margin: 50px auto;
+}
+
+.input-row{
+    font-size:20px;
+}
+
+.input-row span{
+    padding-left:5px;
+}
+
+.input-row span:first-of-type{
+    padding-right:20px;
+}
+
+#subscriptions .container{
+    margin-top:200px;
+}
+
+.column{
+    margin: 50px auto;
+    border:1px solid rgb(100,100,100);
+    width: 28%;
+    min-height: 1100px;
+}
+
+.column:nth-of-type(2){
+    margin: 50px 8%;
+}
+
+.target{
+    border-bottom:1px solid rgb(100,100,100);
+    padding:30px;
+    text-align: center;
+}
+
+.offer{
+    padding: 30px 30px 20px;
+    width:100%;
+}
+
+.offer .title{
+    font-size:30px;
+    font-weight: bold;
+}
+
+.offer .price{
+    font-size:20px;
+    font-weight: bold;
+    padding: 15px 0 10px;
+}
+
+.offer .details{
+    font-size: 16px;
+    color:rgb(100,100,100);
+}
+
+.column .button{
+    display: inline-block;
+    margin:20px 30px 20px;
+    width:calc(100% - 60px);
+    text-align: center;
+}
+
+.column .features{
+    padding: 20px 30px 20px;
+}
+
+.features p{
+    padding: 10px 0;
+}
+
+#buy-now{
+    padding:0px 30px 20px;
+}
+
+.column hr{
+    margin: 0 30px;
+    color:rgb(100,100,100);
+}
+
+.summary{
+    padding: 20px 30px 20px;
+}
+
+.summary p{
+    padding-top:30px;
+}
+
+.summary p:first-child{
+    font-size:18px;
+    font-weight: bold;
+}
+
+.row{
+    display: inline-block;
+    width:100%;
+    margin: 50px auto;
+    border:1px solid rgb(100,100,100);
+}
+
+.row::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+/* Find a partner section */
+#find-partner .container::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.image-container{
+    display: inline-block;
+    width: 55%;
+}
+
+.image-container img{
+    object-fit: contain;
+    width:100%;
+}
+
+#find-partner .text-container{
+    width:40%;
+    padding-right: 100px;
+}
+
+#find-partner .title{
+    font-size:30px;
+    font-weight: bold;
+}
+
+#find-partner .text{
+    font-size:18px;
+    margin: 30px auto;
+    line-height:30px;
+}
+
+#find-partner .button{
+    display: inline-block;
+}
