@@ -67,7 +67,7 @@ header .button{
 /* Navigation bars layout */
 nav ul li{
     display: inline;
-    padding:0 30px; 
+    padding:0 30px;
 }
 
 nav ul li:last-child{
@@ -312,4 +312,105 @@ h2{
 
 .advantage p a{
     color:black;
+}
+
+h3{
+    display: inline-block;
+    margin-top:100px;
+    font-size:40px;
+    font-weight: bold;;
+}
+
+#down-h3{
+    color:blue;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Subscribed enterprises section */
+#partners::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+.square{
+    display: inline-block;
+    width:450px;
+}
+
+.squared{
+    display: inline-block;
+    width:225px;
+    height: 225px;
+    text-align: center;
+}
+
+#darkred-square{
+    background-color: rgb(97,8,43);
+    line-height:300px;
+}
+
+#scarlet-square{
+    background-color: rgb(255,28,28);
+    line-height:250px;
+}
+
+#lightblue-square{
+    background-color: rgb(0,147,206);
+    line-height: 225px;
+}
+
+#green-square{
+    background-color: rgb(162,211,155);
+    line-height: 250px;
+}
+
+#red-square{
+    background-color: rgb(213,0,31);
+    line-height: 250px;
+}
+
+#violet-square{
+    background-color: rgb(13,36,129);
+    line-height: 275px;
+}
+
+#azure-square{
+    background-color: rgb(180,208,231);
+    line-height: 225px;
+}
+
+#yellow-square{
+    background-color: rgb(255,216,48);
+    line-height: 300px;
+}
+
+.squared img{
+    width:50%;
+    height:auto;
+    filter: invert(1);
+}
+
+#partners .text-container{
+    width:calc(100% - 900px);
+    height:450px;
+    background-color: rgb(245,245,245);
+}
+
+
+#partners .text-container img{
+    width:40%;
+    padding: 25px 50px;
+}
+
+
+#partners .text-container hr{
+    width:50px;
+    margin:0 50px;
+}
+
+#partners .text-container p{
+    font-size: 18px;
+    margin:50px;
 }
