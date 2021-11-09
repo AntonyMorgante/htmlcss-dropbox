@@ -451,6 +451,33 @@ h3{
     margin-top:60px;
 }
 
+/* FAQ section */
+.faq{
+    border-top:1px solid rgb(224,224,226);
+}
+
+.faq:last-child{
+    border-bottom:1px solid rgb(224,224,226);
+}
+
+.question{
+    font-size:18px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+
+.answer{
+    color:rgb(224,224,226);
+}
+
+.hidden{
+    display: none;
+}
+
+.hovered:hover .hidden{
+    display: block;
+}
+
 /* Footer sections */
 footer{
     color:white;
