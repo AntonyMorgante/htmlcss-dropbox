@@ -453,8 +453,8 @@ h3{
 
 /* Footer sections */
 footer{
-    background-color: black;
     color:white;
+    background-color: black;
     padding:20px 0;
 }
 
@@ -484,10 +484,21 @@ footer ul li{
     padding-bottom: 15px;
 }
 
-footer ul li:first-child{
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+footer p{
     padding-bottom:30px;
     font-size:25px;
     font-weight: bold;
+    width: 15%;
+    margin-right:5%;
 }
 
 .footer-container:nth-of-type(2){
