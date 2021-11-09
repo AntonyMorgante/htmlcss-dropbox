@@ -521,8 +521,19 @@ footer p{
 
 footer select{
     margin-top:50px;
+    background-color: transparent;
+    border:none;
+    outline:none;
+    color:rgb(175,175,175);
+    font-size: 12px;
+    width:65px;
+}
+
+footer select::-ms-expand{
+    display: none;
 }
 
 footer select i{
     filter:invert(1);     
 }
+
