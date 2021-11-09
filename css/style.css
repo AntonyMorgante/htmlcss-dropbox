@@ -150,6 +150,11 @@ h1{
     color:black;
 }
 
+#jumbo i{
+    padding-top:20px;
+    font-size: 40px;
+}
+
 
 /* Subscriptions section layout */
 h2{
@@ -245,6 +250,10 @@ h2{
 
 .summary{
     margin-top: 20px;
+}
+
+.summary i{
+    color:rgb(0, 97, 255);
 }
 
 .summary p{
@@ -512,4 +521,8 @@ footer p{
 
 footer select{
     margin-top:50px;
+}
+
+footer select i{
+    filter:invert(1);     
 }
