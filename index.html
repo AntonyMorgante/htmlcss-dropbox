@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link href="http://fonts.cdnfonts.com/css/whitney-2" rel="stylesheet">
     <title>Dropbox Business Replica</title>
 </head>
@@ -35,7 +35,7 @@
                     <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
                     <a href="#" id="blue-button" class="button hovers">Inizia la tua prova gratuita</a>
                     <p id="little-text">Annulla in qualsiasi momento</p>
-                    <a href="#subscriptions" class="anchor">Freccia</a>
+                    <a href="#subscriptions" class="anchor"><i class="fa-solid fa-arrow-down"></i></a>
                 </div>
                 <img class="lw" src="img/jumbo.png" alt="">
         </div>
@@ -45,92 +45,100 @@
         <section id="subscriptions">
             <div class="container">
                 <h2>Trova il piano Dropbox Business che fa per te</h2>
-                <p class="input-row"><input type="radio"><span>Fatturazione mensile</span> <input type="radio"><span>Fatturazione annuale</span></p>
+                <p class="input-row" value="1"><input type="radio" name="payment"><span>Fatturazione mensile</span> <input type="radio" name="payment" value="2"><span>Fatturazione annuale</span></p>
                 <div class="column lw">
                     <p class="target">Singolo</p>
-                    <div class="offer">
-                        <p class="title">Professional</p>
-                        <p class="price">19,99 €</p>
-                        <p class="details">/ mese</p>
-                    </div>
-                    <div class="features">
-                        <p>1 utente</p>
-                        <p>3 TB di spazio di archiviazione sicuro</p>
-                        <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
-                    </div> 
-                    <a id="blue-button" href="#" class="button hovers">Prova gratis per 30 giorni</a>        
-                    <p id="buy-now">oppure <a href="#">acquista ora</a></p>
-                    <hr>
-                    <div class="summary">
-                        <p>Punti salienti del piano</p>
-                        <p>Invia file fino a 100 GB con Dropbox Transfert</p>
-                        <p>Cartelle offline su dispositivi mobile</p>
-                        <p>Pulizia remota dell'account</p>
-                        <p>Filigrana documento</p>
-                        <p>Assistenza prioritaria via email e chat</p>
+                    <div class="column-container">
+                        <div class="offer">
+                            <p class="title">Professional</p>
+                            <p class="price">19,99 €</p>
+                            <p class="details">/ mese</p>
+                        </div>
+                        <div class="features">
+                            <p>1 utente</p>
+                            <p>3 TB di spazio di archiviazione sicuro</p>
+                            <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                        </div> 
+                        <a id="blue-button" href="#" class="button hovers">Prova gratis per 30 giorni</a>        
+                        <p id="buy-now">oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <div class="summary">
+                            <p>Punti salienti del piano</p>
+                            <p>Invia file fino a 100 GB con Dropbox Transfert</p>
+                            <p>Cartelle offline su dispositivi mobile</p>
+                            <p>Pulizia remota dell'account</p>
+                            <p>Filigrana documento</p>
+                            <p>Assistenza prioritaria via email e chat</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="column lw">
                     <p class="target">Team</p>
-                    <div class="offer">
-                        <p class="title">Standard</p>
-                        <p class="price">19,99 €</p>
-                        <p class="details">/ utente / mese, a partire da 3 utenti</p>
-                    </div>
-                    <div class="features">
-                        <p>1 utente</p>
-                        <p>3 TB di spazio di archiviazione sicuro</p>
-                        <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
-                    </div>  
-                    <a id="blue-button" href="#" class="button hovers">Prova gratis per 30 giorni</a>        
-                    <p id="buy-now">oppure <a href="#">acquista ora</a></p>
-                    <hr>
-                    <div class="summary">
-                        <p>Punti salienti del piano</p>
-                        <p>Invia file fino a 100 GB con Dropbox Transfert</p>
-                        <p>Cartelle offline su dispositivi mobile</p>
-                        <p>Pulizia remota dell'account</p>
-                        <p>Filigrana documento</p>
-                        <p>Assistenza prioritaria via email e chat</p>
-                        <p>Assistenza prioritaria via email e chat</p>
+                    <div class="column-container">
+                        <div class="offer">
+                            <p class="title">Standard</p>
+                            <p class="price">19,99 €</p>
+                            <p class="details">/ utente / mese, a partire da 3 utenti</p>
+                        </div>
+                        <div class="features">
+                            <p>1 utente</p>
+                            <p>3 TB di spazio di archiviazione sicuro</p>
+                            <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                        </div>  
+                        <a id="blue-button" href="#" class="button hovers">Prova gratis per 30 giorni</a>        
+                        <p id="buy-now">oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <div class="summary">
+                            <p>Punti salienti del piano</p>
+                            <p>Invia file fino a 100 GB con Dropbox Transfert</p>
+                            <p>Cartelle offline su dispositivi mobile</p>
+                            <p>Pulizia remota dell'account</p>
+                            <p>Filigrana documento</p>
+                            <p>Assistenza prioritaria via email e chat</p>
+                            <p>Assistenza prioritaria via email e chat</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="column lw">
                     <p class="target">Team</p>  
-                    <div class="offer">
-                        <p class="title">Advanced</p>
-                        <p class="price">19,99 €</p>
-                        <p class="details">/ utente / mese, a partire da 3 utenti</p>
-                    </div>   
-                    <div class="features">
-                        <p>1 utente</p>
-                        <p>3 TB di spazio di archiviazione sicuro</p>
-                        <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
-                    </div>   
-                    <a id="blue-button" href="#" class="button hovers">Prova gratis per 30 giorni</a>        
-                    <p id="buy-now">oppure <a href="#">acquista ora</a></p>
-                    <hr>
-                    <div class="summary">
-                        <p>Punti salienti del piano</p>
-                        <p>Invia file fino a 100 GB con Dropbox Transfert</p>
-                        <p>Cartelle offline su dispositivi mobile</p>
-                        <p>Pulizia remota dell'account</p>
-                        <p>Filigrana documento</p>
-                        <p>Assistenza prioritaria via email e chat</p>
-                        <p>Assistenza prioritaria via email e chat</p>
-                    </div>
+                    <div class="column-container">
+                        <div class="offer">
+                            <p class="title">Advanced</p>
+                            <p class="price">19,99 €</p>
+                            <p class="details">/ utente / mese, a partire da 3 utenti</p>
+                        </div>   
+                        <div class="features">
+                            <p>1 utente</p>
+                            <p>3 TB di spazio di archiviazione sicuro</p>
+                            <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                        </div>   
+                        <a id="blue-button" href="#" class="button hovers">Prova gratis per 30 giorni</a>        
+                        <p id="buy-now">oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <div class="summary">
+                            <p>Punti salienti del piano</p>
+                            <p>Invia file fino a 100 GB con Dropbox Transfert</p>
+                            <p>Cartelle offline su dispositivi mobile</p>
+                            <p>Pulizia remota dell'account</p>
+                            <p>Filigrana documento</p>
+                            <p>Assistenza prioritaria via email e chat</p>
+                            <p>Assistenza prioritaria via email e chat</p>
+                        </div>
+                    </div>                   
                 </div>
                 
                <div class="row">
                     <p class="target">Team</p>  
-                    <div class="offer lw">
-                        <a href="#" id="blue-button" class="button rw hovers">Contatta l'ufficio vendite</a>
-                        <p class="title">Enterprise</p>
-                        <p class="price">Contatta l'ufficio vendite per i prezzi</p>
-                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
-                    </div>  
+                    <div class="row-container">
+                        <div class="offer lw">
+                            <a href="#" id="blue-button" class="button rw hovers">Contatta l'ufficio vendite</a>
+                            <p class="title">Enterprise</p>
+                            <p class="price">Contatta l'ufficio vendite per i prezzi</p>
+                            <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </section>
