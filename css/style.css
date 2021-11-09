@@ -30,6 +30,12 @@ body{
     margin: 30px auto
 }
 
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
 /* Header */
 header{
     background-color: white;
@@ -113,12 +119,6 @@ nav ul li a:hover{
     min-width:1700px;
     position:relative;
     top:100px;
-}
-
-#jumbo .container::after{
-    content:"";
-    clear:both;
-    display: table;
 }
 
 h1{
@@ -267,19 +267,7 @@ h2{
     padding:30px;
 }
 
-.row-container::after{
-    content:"";
-    clear: both;
-    display: table;
-}
-
 /* Find a partner section */
-#find-partner .container::after{
-    content:"";
-    display: table;
-    clear: both;
-}
-
 .image-container{
     display: inline-block;
     width: 55%;
@@ -334,13 +322,7 @@ h3{
     margin: 20px auto;
 }
 
-/* Subscribed enterprises section */
-#partners::after{
-    content:"";
-    clear: both;
-    display: table;
-}
-
+/* Partners section */
 .square{
     display: inline-block;
     width:30%;
@@ -442,12 +424,6 @@ h3{
     padding: 100px 0;
 }
 
-#free-trial .container::after{
-    content:"";
-    clear:both;
-    display: table;
-}
-
 #free-trial h2{
     color:rgb(97,8,43);
     width:50%;
@@ -475,6 +451,7 @@ h3{
 
 .answer{
     color:rgb(150,150,150);
+    padding-bottom:5px;
 }
 
 .hidden{
@@ -500,12 +477,6 @@ footer{
     margin: 0 10% 50px;
     display: inline-block;
     border-top:1px solid white;
-}
-
-.footer-container::after{
-    content:"";
-    display: table;
-    clear: both;
 }
 
 footer ul{
