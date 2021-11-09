@@ -232,8 +232,14 @@ h2{
     padding: 20px 0 20px;
 }
 
+.features i{
+    margin:10px 5px 0 0;
+    width: 20px;
+}
+
 .features p{
     padding: 10px 0;
+    width:calc(100% - 25px);
 }
 
 #buy-now{
@@ -254,10 +260,13 @@ h2{
 
 .summary i{
     color:rgb(0, 97, 255);
+    padding-top:30px;
+    margin-right:5px;
 }
 
 .summary p{
     padding-top:30px;
+    width:calc(100% - 21px);
 }
 
 .summary p:first-child{
@@ -526,7 +535,8 @@ footer select{
     outline:none;
     color:rgb(175,175,175);
     font-size: 12px;
-    width:65px;
+    width:70px;
+    text-align: center;
 }
 
 footer select::-ms-expand{
