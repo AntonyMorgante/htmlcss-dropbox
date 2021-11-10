@@ -467,6 +467,10 @@ h3{
     padding: 25px 0;
 }
 
+.faq:hover .question i{
+    transform: rotate(0.5turn);
+}
+
 .answer{
     color:rgb(150,150,150);
     padding-bottom:5px;
@@ -537,13 +541,13 @@ footer select{
     font-size: 12px;
     width:70px;
     text-align: center;
-}
-
-footer select::-ms-expand{
-    display: none;
+    -webkit-appearance: none;
 }
 
 footer select i{
     filter:invert(1);     
 }
 
+footer select i::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "f0d8";
+}
