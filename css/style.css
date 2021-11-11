@@ -85,10 +85,12 @@ nav ul li a{
     text-align: center;
     text-decoration: none;
     line-height: 40px;
+    padding-bottom: 23px;
+    padding-top:23px;
 }
 
 nav ul li a:hover{
-    text-decoration: underline;
+    border-bottom:5px solid darkblue;
 }
 
 /* Button layout */
@@ -380,6 +382,7 @@ h3{
     width:40%;
     height:30vw;
     background-color: rgb(245,245,245);
+    overflow:scroll;
 }
 
 
